@@ -2,7 +2,7 @@ function Visualizer(model, selector) {
   this.model = model;
 	// set the scene size
 	this.WIDTH = 1024;
-	this.HEIGHT = 600;
+	this.HEIGHT = 512;
 
   this.$container = $(selector);
 
