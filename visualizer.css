@@ -1,0 +1,20 @@
+body { background: #111; padding:0 2em 2em 2em; }
+h1, h2, h3, h4, a, p { color: #ddd; font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif; }
+#loader { padding: 3em; display:none; }
+#container {
+  height:500px;
+  width:1024px; 
+  display:none;
+  border: solid 1px #CCC;
+  -moz-box-shadow: 1px 1px 5px #ffffff;
+  -webkit-box-shadow: 1px 1px 5px #ffffff;
+  box-shadow: 1px 1px 5px #ffffff;
+}
+#loading { padding: 1em; }
+#controls { display:none; clear:both; }
+#buttons { padding-right:1em; }
+#sliders { margin-left:2em; }
+.slider { margin-right:1.3em; }
+.button#play { width:4em; }
+input[type=range] { width:10em; -webkit-appearance: none; background-color: #222; border:1px solid #666; padding:0.2em; }
+#audioUrl { width: 500px; }

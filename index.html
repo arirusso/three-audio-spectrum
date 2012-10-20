@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <script src="lib/d3.v2.js"></script>
-  <script src="lib/dsp.js"></script>
-  <script src="lib/jquery.js"></script>
-  <script src="lib/RequestAnimationFrame.js"></script>
-  <script src="lib/three.js"></script>
-  <script src="lib/OrbitControls.js"></script>
-  <script src="js/application.js"></script>
-  <script src="js/audio.js"></script>
-  <script src="js/audio_analysis.js"></script>
-  <script src="js/input_audio_source.js"></script>
-  <script src="js/url_audio_source.js"></script>
-  <script src="js/visualization.js"></script>
-  <style>
-    body { background: #111; padding:0 2em 2em 2em; }
-    h1, h2, h3, h4, a, p { color: #ddd; font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif; }
-    #loader { padding: 3em; display:none; }
-    #spectrum_analyzer { border: 1px solid #666; height:500px; width:1024px; display:none; }
-    #loading { padding: 1em; }
-    #controls { display:none; clear:both; }
-    #buttons { padding-right:1em; }
-    #sliders { margin-left:2em; }
-    .slider { margin-right:1.3em; }
-    .button#play { width:4em; }
-    input[type=range] { width:10em; -webkit-appearance: none; background-color: #222; border:1px solid #666; padding:0.2em; }
-    #audioUrl { width: 500px; }
-  </style>
-</head>
-
+    <script src="lib/d3.v2.js"></script>
+    <script src="lib/dsp.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/RequestAnimationFrame.js"></script>
+    <script src="lib/three.js"></script>
+    <script src="lib/OrbitControls.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/audio_analysis.js"></script>
+    <script src="js/input_audio_source.js"></script>
+    <script src="js/url_audio_source.js"></script>
+    <script src="js/visualization.js"></script>
+    <link rel="stylesheet" media="all" href="visualizer.css" />
+  </head>
 <body>
   <div role="main">
     <h1></h1>
