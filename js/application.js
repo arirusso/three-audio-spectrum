@@ -72,11 +72,13 @@ Application.prototype.onSourceLoaded = function(callback) {
 }
 
 Application.prototype.play = function() {
-  //document.getElementById("loader").style.display = 'block';
   var element = document.getElementById('play');
   element.value = "Stop";
+  element.style.display = "none";
+  document.getElementById("loader").style.display = 'inline';
   this.model.play(function() {
-    //document.getElementById("loader").style.display = 'none';
+    element.style.display = "inline";
+    document.getElementById("loader").style.display = 'none';
   });
 }
 

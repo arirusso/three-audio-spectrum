@@ -19,10 +19,6 @@
   <div role="main">
     <h1>Spectrum Analyzer</h1>
     <h4>HTML5 Audio / <a href="https://github.com/mrdoob/three.js">Three.js</a></h4>
-    <div id="loading">
-      <img id="progress" src="assets/images/loader.gif"/>
-      <p>Loading audio...</p>
-    </div>
     <div id="entry">
       <form id="entries">
         <p>
@@ -32,9 +28,14 @@
      </form>
     </div>
     <div id="container"></div>
+    <div id="loading">
+      <img id="progress" src="assets/images/loader.gif"/>
+      <p>Loading audio...</p>
+    </div>
     <div id="controls">
       <p>
         <span id="buttons">
+          <span id="loader"><img id="loader_image" src="assets/images/small_loader.gif" /></span>
           <input id="play" class="button" type="button" onclick="Application.togglePlay();" value="Play">
           <input id="input" class="button" type="button" onclick="Application.toggleInput();" value="Use Audio Input">
         </span>
@@ -45,7 +46,7 @@
           Curve: <input class="slider" type="range" min="1" max="64" value="8" onchange="Application.setCurve(this);">
         </span>
       </p>
-    </div>
+     </div>
   </div>
 </body>
 <script language="javascript">window.onload = Application.load();</script>
