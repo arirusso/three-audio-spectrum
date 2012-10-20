@@ -62,6 +62,7 @@ Application.prototype.sourceFromInput = function() {
 }
 
 Application.prototype.onSourceLoaded = function(callback) {
+  document.getElementById("loading").style.display = 'none';
   document.getElementById("container").style.display = 'block';
   document.getElementById("controls").style.display = 'inline';
   this.audio.source = this.source;
@@ -71,9 +72,11 @@ Application.prototype.onSourceLoaded = function(callback) {
 }
 
 Application.prototype.play = function() {
+  document.getElementById("loader").style.display = 'block';
   var element = document.getElementById('play');
   element.value = "Stop";
   this.model.play(function() {
+    document.getElementById("loader").style.display = 'none';
   });
 }
 

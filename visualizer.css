@@ -2,7 +2,7 @@ body { background: #111; padding:0 2em 2em 2em; }
 h1, h2, h3, h4, a, p { color: #ddd; font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif; }
 #loader { padding: 3em; display:none; }
 #container {
-  height:500px;
+  height:512px;
   width:1024px; 
   display:none;
   border: solid 1px #CCC;
