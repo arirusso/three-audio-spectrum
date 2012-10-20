@@ -35,8 +35,10 @@
     <div id="controls">
       <p>
         <span id="buttons">
-          <span id="loader"><img id="loader_image" src="assets/images/small_loader.gif" /></span>
-          <input id="play" class="button" type="button" onclick="Application.togglePlay();" value="Play">
+          <span id="play_container">
+            <img id="loader_image" src="assets/images/small_loader.gif" />
+            <input id="play" class="button" type="button" onclick="Application.togglePlay();" value="Play">
+          </span>
           <input id="input" class="button" type="button" onclick="Application.toggleInput();" value="Use Audio Input">
         </span>
         <span id="sliders">
