@@ -75,10 +75,10 @@ Application.prototype.play = function() {
   var element = document.getElementById('play');
   element.value = "Stop";
   element.style.display = "none";
-  document.getElementById("loader").style.display = 'inline';
+  document.getElementById("loader_image").style.display = 'inline';
   this.model.play(function() {
     element.style.display = "inline";
-    document.getElementById("loader").style.display = 'none';
+    document.getElementById("loader_image").style.display = 'none';
   });
 }
 

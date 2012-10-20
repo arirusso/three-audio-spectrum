@@ -1,6 +1,7 @@
 body { background: #111; padding:0 2em 2em 2em; }
 h1, h2, h3, h4, a, p { color: #ddd; font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif; }
-#loader { width:60px; display:none; }
+#loader_image { display:none; padding:0 14px 0 14px; }
+#play_container { height:64px; display:inline; }
 #container {
   height:512px;
   width:1024px; 
@@ -12,9 +13,10 @@ h1, h2, h3, h4, a, p { color: #ddd; font-family: 'Helvetica Neue', Helvetica, Ar
 }
 #loading { padding: 1em; }
 #controls { display:none; clear:both; }
-#buttons { padding-right:1em; }
+#controls p { margin-top:1.2em; }
+#buttons { margin-top:2em; padding-right:1em; height:64px; vertical-align:middle; text-align:center; }
 #sliders { margin-left:2em; }
-.slider { margin-right:1.3em; }
-.button#play { width:60px; }
+.slider { margin-right:1.3em; margin-top:1em; }
+.button#play { width:60px; margin-top:1em; }
 input[type=range] { width:10em; -webkit-appearance: none; background-color: #222; border:1px solid #666; padding:0.2em; }
 #audioUrl { width: 500px; }
